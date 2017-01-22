@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VVc-wB-T1l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_ios8_tableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vm-Ot-OpO">
+                                <rect key="frame" x="116" y="119" width="142" height="30"/>
+                                <state key="normal" title="Swift-ViewController"/>
+                                <connections>
+                                    <action selector="gotoSwiftVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJU-ie-Ad5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry4-0o-qgk">
+                                <rect key="frame" x="123" y="319" width="129" height="30"/>
+                                <state key="normal" title="OC-ViewController"/>
+                                <connections>
+                                    <action selector="gotoOCVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDS-ZS-dKz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8vm-Ot-OpO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="12i-n7-HMo"/>
+                            <constraint firstItem="ry4-0o-qgk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ayq-Z9-whI"/>
+                            <constraint firstItem="ry4-0o-qgk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GFD-i2-XBq"/>
+                            <constraint firstItem="8vm-Ot-OpO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mCf-7d-QmP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6df-m3-xRS"/>
+                    <connections>
+                        <outlet property="goOCVCBtn" destination="ry4-0o-qgk" id="BcN-pa-SAV"/>
+                        <outlet property="goSwiftVCBtn" destination="8vm-Ot-OpO" id="iid-Y6-hTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="-28.335832083958024"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O0m-yV-ThF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VVc-wB-T1l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xr7-jM-xKL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qca-Ru-UIu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwt-KW-nbI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170.40000000000001" y="-28.335832083958024"/>
+        </scene>
+    </scenes>
+</document>
