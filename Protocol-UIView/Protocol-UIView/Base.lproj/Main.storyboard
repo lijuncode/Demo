@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Protocol_UIView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixS-Ty-kax">
+                                <rect key="frame" x="46" y="469" width="31" height="30"/>
+                                <state key="normal" title="上图"/>
+                                <connections>
+                                    <action selector="topImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5V-JO-UXL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vI4-dY-7sF">
+                                <rect key="frame" x="102" y="469" width="31" height="30"/>
+                                <state key="normal" title="左图"/>
+                                <connections>
+                                    <action selector="leftImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGa-IS-z5o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUF-BY-ksW">
+                                <rect key="frame" x="158" y="469" width="31" height="30"/>
+                                <state key="normal" title="下图"/>
+                                <connections>
+                                    <action selector="bottomImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Bf-Ns-xmd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7T-hN-Lcv">
+                                <rect key="frame" x="214" y="469" width="31" height="30"/>
+                                <state key="normal" title="右图"/>
+                                <connections>
+                                    <action selector="rightImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4rq-VG-ioT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V7T-hN-Lcv" firstAttribute="leading" secondItem="KUF-BY-ksW" secondAttribute="trailing" constant="25" id="1j3-2C-aUV"/>
+                            <constraint firstItem="V7T-hN-Lcv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="AIl-B7-E97"/>
+                            <constraint firstItem="KUF-BY-ksW" firstAttribute="leading" secondItem="vI4-dY-7sF" secondAttribute="trailing" constant="25" id="Cjf-fe-Uaf"/>
+                            <constraint firstItem="vI4-dY-7sF" firstAttribute="leading" secondItem="ixS-Ty-kax" secondAttribute="trailing" constant="25" id="IIo-IY-GYy"/>
+                            <constraint firstItem="ixS-Ty-kax" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="eqp-sC-Fey"/>
+                            <constraint firstItem="KUF-BY-ksW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="otV-yI-j8B"/>
+                            <constraint firstItem="ixS-Ty-kax" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="vxp-FF-MPl"/>
+                            <constraint firstItem="vI4-dY-7sF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="yer-rV-aoU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
