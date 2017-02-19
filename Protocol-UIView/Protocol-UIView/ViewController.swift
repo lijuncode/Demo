@@ -28,21 +28,25 @@ class ViewController: UIViewController {
 
   @IBAction func topImage(_ sender: Any) {
     contentView.layoutType = .topImage
+    contentView.setNeedsLayout()
     view.setNeedsLayout()
   }
 
   @IBAction func leftImage(_ sender: Any) {
     contentView.layoutType = .leftImage
+    contentView.setNeedsLayout()
     view.setNeedsLayout()
   }
 
   @IBAction func bottomImage(_ sender: Any) {
     contentView.layoutType = .bottomImage
+    contentView.setNeedsLayout()
     view.setNeedsLayout()
   }
 
   @IBAction func rightImage(_ sender: Any) {
     contentView.layoutType = .rightImage
+    contentView.setNeedsLayout()
     view.setNeedsLayout()
   }
 }
